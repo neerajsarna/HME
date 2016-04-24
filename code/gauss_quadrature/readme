@@ -1,0 +1,5 @@
+description of the code:
+1. the main function takes in 3 arguments, namely: a = left end point and is the second command line argument
+b = right end point, third command line argument, n = number of gauss points, first command line argument
+
+2. legendre handle: consists of three arrays: r = {a,b}, w = weights and x = location
