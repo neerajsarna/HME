@@ -26,7 +26,7 @@ int sign(double a)
 /****Shu limiter*****/
 double shu(double a,double b,double c)
 {
-	double M=200.0;		
+	double M=500.0;		
     double alpha;		
 	double delta_x = (xr-xl)/N;
 

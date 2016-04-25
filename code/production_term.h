@@ -1,4 +1,4 @@
-void production_term(const double delta_t,double **coeff,(*values)[ngp])
+void production_term(const double delta_t,double **coeff,double (*values)[ngp])
 {
 	double **u_quad;						// store the value of the solution at the quadrature points
 

@@ -61,7 +61,6 @@ plt.show();
 
 plt.plot(x_DG_order1,solution_DG_order1[4,:],label='f4_DG_p0');
 plt.plot(x_DG_order2,solution_DG_order2[4,:],label='f4_DG_p1');
-plt.plot(x_DG,solution_DG[4,:],label='f4_DG');
 plt.plot(data_PRICE[0,:],data_PRICE[5,:],label='f4_PRICE');
 plt.plot(data_WP2[0,:],data_WP2[5,:],label='f4_WP2');
 plt.legend(loc='best');

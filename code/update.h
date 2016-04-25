@@ -28,7 +28,7 @@ void time_update(data *solution,stiff *noncons,polynomial l,double delta_x,doubl
 
 	set_boundary(solution->temp);
 
-//	limiter_moment(solution->temp,l.b_values);
+	limiter_moment(solution->temp,l.b_values);
 	
 		fluxes_cons(solution->temp,l.legendre,l.b_values,solution->qtemp,delta_x);			
  		
@@ -50,6 +50,6 @@ void time_update(data *solution,stiff *noncons,polynomial l,double delta_x,doubl
 		
 		set_boundary(solution->coeff);
 
-//		limiter_moment(solution->coeff,l.b_values);
+		limiter_moment(solution->coeff,l.b_values);
 
 }

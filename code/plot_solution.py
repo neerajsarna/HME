@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 from numpy import*
 
-x = loadtxt("location",unpack=True);
-solution = loadtxt("solution",unpack=True);
+x = loadtxt("result_high_resolution/locationKn0p5order2",unpack=True);
+solution = loadtxt("result_high_resolution/solutionKn0p5order2",unpack=True);
 
 plt.plot(x,solution[0,:],label='density');
 plt.plot(x,multiply(solution[0,:],solution[2,:]),label='pressure');

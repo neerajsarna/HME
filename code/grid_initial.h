@@ -26,11 +26,11 @@ void output(double **coeff,double *x,double (*b_values)[2])
 	FILE *fp;
 	FILE *fp2;							// store the location of the points on the grid
 
-	fp = fopen("result_high_resolution/solutionKn0p5order1","w+");
+	fp = fopen("result_high_resolution/solutionKn0p5order2","w+");
 	
 	assert(fp != NULL);
 
-	fp2 = fopen("result_high_resolution/locationKn0p5order1","w+");
+	fp2 = fopen("result_high_resolution/locationKn0p5order2","w+");
 
 	assert(fp2 != NULL);
 

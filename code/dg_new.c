@@ -8,12 +8,17 @@
 #include <string.h>
 #include <stdbool.h>
 
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
+
+
 #define NDEBUG		//uncomment the code when not using assert
 #include <assert.h>
 #include "time.h"
 
 
-#define p 0	 				//degree of the polynomial
+#define p 1	 				//degree of the polynomial
 #define var 5				//total convective variables, set for euler equations + stiffened as law
 #define ngp 4				// total number of gauss points being used in the code
 #define gamma 5/3.0

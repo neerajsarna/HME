@@ -1,0 +1,20 @@
+#!/usr/bin/env zsh
+
+#BSUB -J "Job[1-1]"
+
+#BSUB -o /home/ns179556/HME/stdout.txt
+
+#BSUB -W 1:00
+
+#BSUB -M 1200
+
+#BSUB -N -u neerajsarna587@gmail.com
+
+echo LSB_JOBINDEX: $LSB_JOBINDEX
+
+case "$LSB_JOBINDEX" in
+	1)
+		dg_new.out 4000 > "output$LSB_JOBINDEX"
+	;;
+
+esac
